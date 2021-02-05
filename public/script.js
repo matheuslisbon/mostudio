@@ -4,7 +4,6 @@ const header = document.querySelectorAll('.selectHeader')
 const span = document.querySelector('.selectSpan')
 const footer = document.querySelector('footer')
 h2.addEventListener('click', ()=>{
-  console.log(header)
   if(h2.classList.contains('closed') === true){
     h2.classList.add('open')
     h2.classList.remove('closed')
