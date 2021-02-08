@@ -32,6 +32,7 @@ h1{
 }
 .displayNone{
   display: none;
+
 }
 .openHeader{
   width: 100%;
@@ -43,6 +44,7 @@ h1{
 .spanClosed{
   display: initial;
   position: fixed;
+  z-index: 999;
   padding: 10px;
 
   background: var(--yellow);
@@ -77,7 +79,7 @@ aside {
   height: 100vh;
   position: fixed;
   z-index: 999;
-  border-right: 2px dashed yellow;
+  border-right: 2px dashed #f3c623;
 }
 div.content{
   background-color: black;
@@ -109,6 +111,11 @@ a.logo{
 a.list {
   color: #ffffffcc;
 }
+a.list:hover{
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+
+}
 a.name{
   color: #ffffffb3;
 }
@@ -136,18 +143,16 @@ aside div.content input{
   font-size: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1) ;
 }
-
 header{
   float: right;
   width: 75%;
-  border-left: 3px solid yellow;
+  border-left: 3px solid #f3c623;
   margin-top: -7px;
 }
 header div.home img{
   width: 50%;
   height: 100vh;
 }
-
 header div.home div.home-content{
   width: 50%;
 
@@ -213,4 +218,40 @@ footer a {
   background: var(--orange);
   padding:10px 20px;
   color: white;
+}
+
+@media(max-width:1000px){
+  aside{
+    width: 100%;
+  }
+  a.logo{ 
+    font-size: 54px;
+  }
+  aside div.content h3{
+    color: #ffffff33;
+    font-size: 12px;
+  }
+  aside li {
+    margin: 4px 0;
+    font-size: 22px;
+  }
+  aside div.content p {
+    font-size: 12px;
+  }
+
+}
+
+@media(max-width:600px){
+  div.home {
+    display: flex;
+    flex-direction: column;
+  }
+  div.reverse{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  header div.home div.home-content,
+  header div.home img{
+    width: 100%;
+  }
 }

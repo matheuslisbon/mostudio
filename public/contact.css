@@ -1,0 +1,99 @@
+div.contact{
+  display: flex;
+}
+div.contact-info{
+  width: 30%;
+  height: 101vh;
+  background: #f3c623;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.contact-form{
+  padding: 50px;
+  color: #ffffff66;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #111111;
+  width: 70%;
+  height: 101vh;
+}
+
+div.contact-form .contact-title{
+  color: white;
+  font-size: 2.0rem;
+  margin-bottom:10px ;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.info-private{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.contact-label{
+  margin: 8px 0;
+}
+div.info-name{
+  display: flex;
+  flex-direction: column;
+}
+
+div.contact-form input, textarea{
+  border: none;
+  background: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  height: 52px;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+textarea{
+  overflow: auto;
+  resize: vertical;
+}
+button{
+  background: #f3c623;
+  border: 1px solid #f3c623;
+  color: #000000;
+  cursor: pointer;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  width: max-content;
+  font-size: .9rem;
+  padding:8px 12px;
+}
+
+.contact-info h2{
+  color: white;
+}
+.contact-info p{
+  color: #000000cc;
+}
+
+@media(max-width:900px){  
+  div.contact{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  div.contact-form{
+    width: 100%;
+  }
+  div.contact-info{
+    width: 100%;
+  }
+}

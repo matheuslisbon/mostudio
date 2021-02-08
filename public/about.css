@@ -1,0 +1,82 @@
+div.home-about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.home-about div.bck-home{
+  background-image: url(./assets/images/about.jpg);
+  height: 101vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.name-about{
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-family: 'Abril Fatface', cursive;
+}
+div.home-about .about-content{
+  background: #111111;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.home-about .about-content h1{
+  color: white;
+  font-size: 2.5rem;
+}
+div.home-about .about-content p{
+  color: #666666;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-itens{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  gap: 30px;
+  margin-top: 25px;
+}
+div.team-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-itens .team{
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.team-1{
+  background-image: url(./assets/images/team-1.jpg);
+}
+.team-2{
+  background-image: url(./assets/images/team-2.jpg);
+}
+.team-3{
+  background-image: url(./assets/images/team-3.jpg);
+}
+.team-title{
+  color: white;
+  font-size: 1.1rem;
+  padding-top: 12px;
+}
+.team-descript{
+  color: white;
+  padding: 5px;
+  font-size: .9rem;
+}
+
+@media(max-width:900px){
+  div.home-about{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .about-itens{
+    grid-template-columns: 1fr;
+  }
+}
