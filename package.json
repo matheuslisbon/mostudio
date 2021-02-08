@@ -1,18 +1,18 @@
 {
   "name": "estudioWebSite",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/matheuslisbon/mostudio.git",
   "author": "matheus <matheuszicatop523@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon src/app.js",
+    "deploy": "vercel deploy --prod",
+    "vercel-build": " next build && NODE_ENV=production node src/index.js"
   },
   "dependencies": {
     "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "handlebars": "^4.7.6"
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
